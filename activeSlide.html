@@ -23,8 +23,7 @@
     </script>
     <![endif]-->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="jquery.fullPage.js"></script>
@@ -42,10 +41,30 @@
 <body>
 
 <ul id="menu">
-    <li><div class="parallelogram"><a href="#firstPage">First slide</a></div></li>
-    <li><div class="parallelogram"><a href="#secondPage">Second slide</a></div></li>
-    <li><div class="parallelogram"><a href="#3rdPage">Third slide</a></div></li>
-    <li><div class="parallelogram"><a href="#4thpage">Fourth slide</a></div></li>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img src="assets/kts_logo.png" alt="KTS LOGO" class="logo">
+            </div>
+            <div class="col-lg-8 col-md-8 hidden-sm hidden-xs menu-middle">
+                <div class="text-right">
+                    <li class="parallelogram" data-menuanchor="firstPage">
+                        <a href="#firstPage">First slide</a>
+                    </li>
+                    <li class="parallelogram" data-menuanchor="secondPage">
+                        <a href="#secondPage">Second slide</a>
+                    </li>
+                    <li class="parallelogram" data-menuanchor="3rdPage">
+                        <a href="#3rdPage">Third slide</a>
+                    </li>
+                    <li class="parallelogram" data-menuanchor="4thpage">
+                        <a href="#4thpage">Fourth slide</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>-->
     <!--<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>-->
     <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>-->
@@ -53,10 +72,12 @@
 </ul>
 
 <div id="fullpage">
-    <div class="section " id="section0">
-        <h1>fullPage.js</h1>
-        <p>Continuous Scrolling Enabled</p>
-        <img src="imgs/fullPage.png" alt="fullPage"/>
+    <div class="section" id="section0">
+        <div class="section-container">
+            <div class="container">
+                <h1 class="company-name text-center">KARNATAKA TOURS & SERVICES</h1>
+            </div>
+        </div>
     </div>
     <div class="section active" id="section1">
         <div class="slide" id="slide1">

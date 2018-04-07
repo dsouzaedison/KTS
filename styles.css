@@ -71,7 +71,7 @@ body {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 350%;
 }
 
 p {
@@ -85,7 +85,7 @@ p {
 }
 
 .section {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #menu li {
@@ -126,7 +126,7 @@ p {
 
 #menu li.active a {
     background: #fff;
-    color: #555;
+    color: #555 !important;
 }
 
 #menu li.active a {
@@ -135,12 +135,13 @@ p {
 
 #menu {
     position: fixed;
-    right: 15vw;
-    top: 10px;
+    right: 0;
+    top: 50px;
     height: 40px;
     z-index: 70;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .twitter-share-button {
@@ -301,4 +302,31 @@ p {
     /*background: rgba(1, 1, 2, 0.47);*/
     -webkit-transform:    skewX(-20deg);
     transform:    skewX(-20deg);
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-top: 0px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-middle {
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+#section0 {
+    background: url("assets/home_artwork.png") no-repeat;
+    background-size: 100% 85%;
+    background-position: bottom;
+}
+
+.company-name {
+    color: #fff;
 }
