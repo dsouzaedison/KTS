@@ -10,6 +10,8 @@
     <meta name="Resource-type" content="Document"/>
 
 
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
@@ -31,8 +33,11 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 sectionsColor: ['#ff9800', '#2196f3', '#fdd835', '#fc6c7c'],
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
-                menu: '#menu'
+                anchors: ['firstP,age', 'secondPage', '3rdPage', '4thpage'],
+                menu: '#menu',
+                onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+                    console.log('Index: ' + nextSlideIndex);
+                }
             });
         });
     </script>
@@ -49,16 +54,32 @@
             <div class="col-lg-8 col-md-8 hidden-sm hidden-xs menu-middle">
                 <div class="text-right">
                     <li class="parallelogram" data-menuanchor="firstPage">
-                        <a href="#firstPage">First slide</a>
+                        <a href="#firstPage">
+                            <span>
+                                <i class="fa fa-home"></i> Home
+                            </span>
+                        </a>
                     </li>
                     <li class="parallelogram" data-menuanchor="secondPage">
-                        <a href="#secondPage">Second slide</a>
+                        <a href="#secondPage">
+                            <span>
+                                <i class="fa fa-info-circle"></i> About
+                            </span>
+                        </a>
                     </li>
                     <li class="parallelogram" data-menuanchor="3rdPage">
-                        <a href="#3rdPage">Third slide</a>
+                        <a href="#3rdPage">
+                            <span>
+                                <i class="fa fa-archive"></i> Packages
+                            </span>
+                        </a>
                     </li>
                     <li class="parallelogram" data-menuanchor="4thpage">
-                        <a href="#4thpage">Fourth slide</a>
+                        <a href="#4thpage">
+                            <span>
+                                <i class="fa fa-phone-square"></i> Contact
+                            </span>
+                        </a>
                     </li>
                 </div>
             </div>
@@ -76,6 +97,21 @@
         <div class="section-container">
             <div class="container">
                 <h1 class="company-name text-center">KARNATAKA TOURS & SERVICES</h1>
+                <h4 class="tagline">A mission of service</h4>
+                <div class="home-icons">
+                    <div class="home-icon-wrapper">
+                        <i class="fa fa-plane home-icon"></i>
+                    </div>
+                    <div class="home-icon-wrapper">
+                        <i class="fa fa-bus home-icon"></i>
+                    </div>
+                    <div class="home-icon-wrapper">
+                        <i class="fa fa-taxi home-icon"></i>
+                    </div>
+                    <div class="home-icon-wrapper">
+                        <i class="fa fa-building home-icon"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
