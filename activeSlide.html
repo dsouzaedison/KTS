@@ -33,7 +33,7 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 sectionsColor: ['#ff9800', '#2196f3', '#fdd835', '#fc6c7c'],
-                anchors: ['firstP,age', 'secondPage', '3rdPage', '4thpage'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
                 menu: '#menu',
                 onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
                     console.log('Index: ' + nextSlideIndex);
@@ -111,6 +111,14 @@
                     <div class="home-icon-wrapper">
                         <i class="fa fa-building home-icon"></i>
                     </div>
+                </div>
+            </div>
+            <div class="bottom-bar-wrapper">
+                <div class="bottom-nav">
+                    HOME
+                </div>
+                <div class="chevron-container">
+                    <i class="fa fa-chevron-circle-down"></i>
                 </div>
             </div>
         </div>
