@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dsouzaedison/KTS/issues"
   },
-  "homepage": "https://github.com/dsouzaedison/KTS#readme"
+  "homepage": "https://github.com/dsouzaedison/KTS#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  }
 }
