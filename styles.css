@@ -303,7 +303,7 @@ p {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     width: 140px;
-    height: 46px;
+    height: 47px;
     border: 1px solid #fff;
     font: normal 100%/normal Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
@@ -318,6 +318,7 @@ p {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);
     display: inline-block;
+    font-size: 130%;
 }
 
 .logo {
@@ -385,27 +386,7 @@ p {
     bottom: 0;
     left: 0;
     text-align: right;
-}
-
-.bottom-nav {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 200px;
-    height: 48px;
-    margin: -1px;
-    border: none;
-    font: normal 100%/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: #fff;
-
-    float: right;
-    font-size: 120%;
-    font-weight: bold;
-    text-align: center;
-    line-height: 48px;
+    overflow: hidden;
 }
 
 .chevron-container {
@@ -434,6 +415,13 @@ p {
     border: 4px solid #fff;
     margin: 0 auto;
     position: relative;
+    cursor: pointer;
+    background-position: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .home-gallery-image > div {
@@ -466,6 +454,10 @@ p {
 .place4 {
     background: url("./assets/home/malpe.jpg") no-repeat;
     background-size: cover;
+}
+
+.place1:hover, .place2:hover, .place3:hover, .place4:hover {
+    transform: scale(1.1);
 }
 
 .about-tab1, .about-tab2 {
@@ -548,6 +540,10 @@ p {
     background: #0066b7;
 }
 
+.bottom-bar-section3 {
+    background: #e1bd33;
+}
+
 .bottom-text-container {
     position: absolute;
     top: 0;
@@ -563,4 +559,88 @@ p {
 #section1 {
     background: url("./assets/about_bg.png") no-repeat;
     background-size: 100% auto;
+}
+
+.bottom-nav:after {
+    content: ' ';
+    width: 40px;
+    height: 70px;
+    background: #fff;
+    position: absolute;
+    left: -10px;
+    transform: rotate(20deg);
+}
+
+.bottom-nav {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 200px;
+    height: 48px;
+    margin: -1px;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #fff;
+
+    float: right;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 48px;
+    position: relative;
+}
+
+.maps-iframe {
+    border: 5px solid #fff;
+    height: 500px;
+    width: 100%;
+}
+
+.contact-form {
+    min-height: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+}
+
+.contact-heading {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.form {
+   margin: 20px 0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 120%;
+    border: none;
+    border-bottom: 3px solid #d6d6d6;
+    transition: all 0.5s ease;
+    margin: 15px 0;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom: 3px solid #f60;
+}
+
+.contact-underline {
+    width: 50px;
+    height: 4px;
+    background: #f60;
+    margin-top: 5px;
+}
+
+#section3 .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
