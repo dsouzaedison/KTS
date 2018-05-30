@@ -1,22 +1,28 @@
+<!-- 
+TODO: 
+1) Fix Footer Text overlap on md and below
+2) On Production: Organize and Delete meta-tags. Minify. Structure. Compress. Shift <script></script> to body end. Uncomment.  
+-->
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Karnataka Tours & Services</title>
-    <meta name="author" content="Matthew Howell"/>
-    <meta name="description" content="fullPage continuous scrolling demo."/>
-    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous"/>
-    <meta name="Resource-type" content="Document"/>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
 
 
     <link rel="icon" href="./assets/kts_logo.png">
-    <link rel="stylesheet" type="text/css"
-          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--<link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>-->
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <!--[if IE]>
     <script type="text/javascript">
@@ -45,173 +51,178 @@
     </script>
 
 </head>
+
 <body>
 
-<ul id="menu">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="assets/kts_logo.png" alt="KTS LOGO" class="logo">
-            </div>
-            <div class="col-lg-8 col-md-8 hidden-sm hidden-xs menu-middle">
-                <div class="text-right">
-                    <li class="parallelogram" data-menuanchor="firstPage">
-                        <a href="#firstPage">
-                            <span>
-                                <i class="fa fa-home"></i> Home
-                            </span>
-                        </a>
-                    </li>
-                    <li class="parallelogram" data-menuanchor="secondPage">
-                        <a href="#secondPage">
-                            <span>
-                                <i class="fa fa-info-circle"></i> About
-                            </span>
-                        </a>
-                    </li>
-                    <li class="parallelogram" data-menuanchor="3rdPage">
-                        <a href="#3rdPage">
-                            <span>
-                                <i class="fa fa-archive"></i> Packages
-                            </span>
-                        </a>
-                    </li>
-                    <li class="parallelogram" data-menuanchor="4thpage">
-                        <a href="#4thpage">
-                            <span>
-                                <i class="fa fa-phone-square"></i> Contact
-                            </span>
-                        </a>
-                    </li>
+    <ul id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <img src="assets/kts_logo.png" alt="KTS LOGO" class="logo">
+                </div>
+                <div class="col-lg-8 col-md-8 hidden-sm hidden-xs menu-middle">
+                    <div class="text-right">
+                        <li class="parallelogram" data-menuanchor="firstPage">
+                            <a href="#firstPage">
+                                <span>
+                                    <i class="fa fa-home"></i> Home
+                                </span>
+                            </a>
+                        </li>
+                        <li class="parallelogram" data-menuanchor="secondPage">
+                            <a href="#secondPage">
+                                <span>
+                                    <i class="fa fa-info-circle"></i> About
+                                </span>
+                            </a>
+                        </li>
+                        <li class="parallelogram" data-menuanchor="3rdPage">
+                            <a href="#3rdPage">
+                                <span>
+                                    <i class="fa fa-archive"></i> Packages
+                                </span>
+                            </a>
+                        </li>
+                        <li class="parallelogram" data-menuanchor="4thpage">
+                            <a href="#4thpage">
+                                <span>
+                                    <i class="fa fa-phone-square"></i> Contact
+                                </span>
+                            </a>
+                        </li>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>-->
-    <!--<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>-->
-    <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>-->
-    <!--<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>-->
-</ul>
+        <!--<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>-->
+        <!--<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>-->
+        <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>-->
+        <!--<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>-->
+    </ul>
 
-<div id="fullpage">
-    <div class="section" id="section0">
-        <div class="section-container">
-            <div class="container">
-                <h1 class="company-name text-center">KARNATAKA TOURS & SERVICES</h1>
-                <h4 class="tagline">A mission of service</h4>
-                <!--Images-->
-                <div class="col-lg-12">
-                    <div class="row home-images-container">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <div class="home-gallery-image place1">
-                                <div>
-                                    BOAT HOUSE
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="section-container">
+                <div class="container">
+                    <h1 class="company-name text-center">KARNATAKA TOURS & SERVICES</h1>
+                    <h4 class="tagline">A Mission of Service</h4>
+                    <!--Images-->
+                    <div class="col-lg-12">
+                        <div class="row home-images-container">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="home-gallery-image place1">
+                                    <div>
+                                        BOAT HOUSE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="home-gallery-image place2">
+                                    <div>
+                                        KRISHNA MATT
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="home-gallery-image place3">
+                                    <div>
+                                        ATTUR CHURCH
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="home-gallery-image place4">
+                                    <div>
+                                        MALPE BEACH
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <div class="home-gallery-image place2">
-                                <div>
-                                    KRISHNA MATT
-                                </div>
-                            </div>
+                    </div>
+                    <!--Font Icons-->
+                    <div class="home-icons">
+                        <div class="home-icon-wrapper">
+                            <i class="fa fa-plane home-icon"></i>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <div class="home-gallery-image place3">
-                                <div>
-                                    ATTUR CHURCH
-                                </div>
-                            </div>
+                        <div class="home-icon-wrapper">
+                            <i class="fa fa-bus home-icon"></i>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <div class="home-gallery-image place4">
-                                <div>
-                                    MALPE BEACH
-                                </div>
-                            </div>
+                        <div class="home-icon-wrapper">
+                            <i class="fa fa-taxi home-icon"></i>
+                        </div>
+                        <div class="home-icon-wrapper">
+                            <i class="fa fa-building home-icon"></i>
                         </div>
                     </div>
                 </div>
-                <!--Font Icons-->
-                <div class="home-icons">
-                    <div class="home-icon-wrapper">
-                        <i class="fa fa-plane home-icon"></i>
+                <div class="bottom-bar-wrapper">
+                    <div class="bottom-nav">
+                        HOME
                     </div>
-                    <div class="home-icon-wrapper">
-                        <i class="fa fa-bus home-icon"></i>
+                    <div class="chevron-container">
+                        <a href="#secondPage" id="scrollDown">
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </a>
                     </div>
-                    <div class="home-icon-wrapper">
-                        <i class="fa fa-taxi home-icon"></i>
-                    </div>
-                    <div class="home-icon-wrapper">
-                        <i class="fa fa-building home-icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-bar-wrapper">
-                <div class="bottom-nav">
-                    HOME
-                </div>
-                <div class="chevron-container">
-                    <i class="fa fa-chevron-circle-down"></i>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section" id="section1">
-        <div class="section-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-tab1">
-                            <h3 class="heading"><i class="fa fa-info-circle"></i> Karnataka Tours & Services</h3>
-                            <div class="kts-taxi-wrapper">
-                                <img src="./assets/kts_taxi.png" alt="KTS Taxi" class="kts-taxi">
-                            </div>
-                            <div class="about-content">
-                                With more than a decade of having the privilege of providing exceptional services to
-                                tourists, Karnataka Tours and Services is a well known name in the Industry. We conduct
-                                hassle free, all inclusive organised tours and travel packages to splendid locations
-                                throughout the state and beyond. Our well trained staff are available at all times for
-                                any assistance and inconveniences during the tour/stay at your disposal. We also provide
-                                quick travel bookings at reasonable fares. Experience world class Hospitality with our
-                                mission of service just for you.
+        <div class="section" id="section1">
+            <div class="section-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="about-tab1">
+                                <h3 class="heading">
+                                    <i class="fa fa-info-circle"></i> Karnataka Tours &amp; Services</h3>
+                                <div class="kts-taxi-wrapper">
+                                    <img src="./assets/kts_taxi.png" alt="KTS Taxi" class="kts-taxi">
+                                </div>
+                                <div class="about-content">
+                                    With more than a decade of having the privilege of providing exceptional services to tourists, Karnataka Tours and Services
+                                    is a well known name in the Industry. We conduct hassle free, all inclusive organised
+                                    tours and travel packages to splendid locations throughout the state and beyond. Our
+                                    well trained staff are available at all times for any assistance and inconveniences during
+                                    the tour/stay at your disposal. We also provide quick travel bookings at reasonable fares.
+                                    Experience world class Hospitality with our mission of service just for you.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-tab2">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="services-container">
-                                        <div class="service-wrapper">
-                                            <h3 class="service-heading"><i class="fa fa-cogs"></i> Our Services</h3>
-                                        </div>
-                                        <div class="service-wrapper">
-                                            <div class="service-icon pull-right">
-                                                <i class="fa fa-plane"></i>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="about-tab2">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="services-container">
+                                            <div class="service-wrapper">
+                                                <h3 class="service-heading">
+                                                    <i class="fa fa-cogs"></i> Our Services</h3>
                                             </div>
-                                            <span class="service-name">Airline Bookings</span>
-                                        </div>
-                                        <div class="service-wrapper">
-                                            <div class="service-icon pull-right">
-                                                <i class="fa fa-bus"></i>
+                                            <div class="service-wrapper">
+                                                <div class="service-icon pull-right">
+                                                    <i class="fa fa-plane"></i>
+                                                </div>
+                                                <span class="service-name">Airline Bookings</span>
                                             </div>
-                                            <span class="service-name">Bus Bookings</span>
-                                        </div>
-                                        <div class="service-wrapper">
-                                            <div class="service-icon pull-right">
-                                                <i class="fa fa-taxi"></i>
+                                            <div class="service-wrapper">
+                                                <div class="service-icon pull-right">
+                                                    <i class="fa fa-bus"></i>
+                                                </div>
+                                                <span class="service-name">Bus Bookings</span>
                                             </div>
-                                            <span class="service-name">Taxi Bookings</span>
-                                        </div>
-                                        <div class="service-wrapper">
-                                            <div class="service-icon pull-right">
-                                                <i class="fa fa-building"></i>
+                                            <div class="service-wrapper">
+                                                <div class="service-icon pull-right">
+                                                    <i class="fa fa-taxi"></i>
+                                                </div>
+                                                <span class="service-name">Taxi Bookings</span>
                                             </div>
-                                            <span class="service-name">Hotel Bookings</span>
+                                            <div class="service-wrapper">
+                                                <div class="service-icon pull-right">
+                                                    <i class="fa fa-building"></i>
+                                                </div>
+                                                <span class="service-name">Hotel Bookings</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -219,10 +230,57 @@
                         </div>
                     </div>
                 </div>
+                <div class="bottom-bar-wrapper bottom-bar-section2">
+                    <div class="bottom-nav">
+                        ABOUT
+                    </div>
+                    <div class="bottom-text-container">
+                        Absolute Stellar Performance | Thousands Of Gratified Guests | Unmatched Trust In Our Service
+                    </div>
+                </div>
             </div>
-            <div class="bottom-bar-wrapper bottom-bar-section2">
+        </div>
+
+        <div class="section active" id="section2">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Around the world scrolling</h1>
+                    <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
+                </div>
+            </div>
+            <div class="slide active" id="slide2">
+                <h1>Slide 2</h1>
+            </div>
+            <div class="slide" id="slide3">
+                <h1>Slide 3</h1>
+            </div>
+
+        </div>
+
+        <div class="section" id="section3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                        <iframe class="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.109032528321!2d74.74692101522248!3d13.343493190612637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb65b007cb97%3A0x9996988792d65bcc!2sKarnataka+Tours!5e0!3m2!1sen!2sin!4v1525697559108"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                        <div class="contact-form">
+                            <div class="contact-heading">CONTACT</div>
+                            <div class="contact-underline"></div>
+                            <div class="form">
+                                <input type="text" class="form-input" placeholder="Name">
+                                <input type="text" class="form-input" placeholder="Email">
+                                <input type="text" class="form-input" placeholder="Phone">
+                                <textarea name="" id="" rows="5" class="form-input" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar-wrapper bottom-bar-section3">
                 <div class="bottom-nav">
-                    ABOUT
+                    CONTACT
                 </div>
                 <div class="bottom-text-container">
                     Absolute Stellar Performance | Thousands Of Gratified Guests | Unmatched Trust In Our Service
@@ -231,53 +289,6 @@
         </div>
     </div>
 
-    <div class="section active" id="section2">
-        <div class="slide" id="slide1">
-            <div class="intro">
-                <h1>Around the world scrolling</h1>
-                <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
-            </div>
-        </div>
-        <div class="slide active" id="slide2">
-            <h1>Slide 2</h1>
-        </div>
-        <div class="slide" id="slide3">
-            <h1>Slide 3</h1>
-        </div>
-
-    </div>
-
-    <div class="section" id="section3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
-                    <iframe class="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.109032528321!2d74.74692101522248!3d13.343493190612637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb65b007cb97%3A0x9996988792d65bcc!2sKarnataka+Tours!5e0!3m2!1sen!2sin!4v1525697559108"
-                            frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                    <div class="contact-form">
-                        <div class="contact-heading">CONTACT</div>
-                        <div class="contact-underline"></div>
-                        <div class="form">
-                            <input type="text" class="form-input" placeholder="Name">
-                            <input type="text" class="form-input" placeholder="Email">
-                            <input type="text" class="form-input" placeholder="Phone">
-                            <textarea name="" id="" rows="5" class="form-input" placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-bar-wrapper bottom-bar-section3">
-            <div class="bottom-nav">
-                CONTACT
-            </div>
-            <div class="bottom-text-container">
-                Absolute Stellar Performance | Thousands Of Gratified Guests | Unmatched Trust In Our Service
-            </div>
-        </div>
-    </div>
-</div>
-
 </body>
+
 </html>

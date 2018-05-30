@@ -98,6 +98,10 @@ p {
     /*text-align: center;*/
 }
 
+#scrollDown {
+    color: white;
+}
+
 #menu li {
     display: inline-block;
     /*margin: 10px;*/
@@ -554,6 +558,7 @@ p {
     color: #fff;
     font-size: 150%;
     line-height: 48px;
+    overflow-x: hidden;
 }
 
 #section1 {
