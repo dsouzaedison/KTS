@@ -1,8 +1,30 @@
 @CHARSET "ISO-8859-1";
 /* Reset CSS
  * --------------------------------------- */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
-form, fieldset, input, textarea, p, blockquote, th, td {
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
     padding: 0;
     margin: 0;
 }
@@ -15,11 +37,20 @@ table {
     border-spacing: 0;
 }
 
-fieldset, img {
+fieldset,
+img {
     border: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
     font-weight: normal;
     font-style: normal;
 }
@@ -28,18 +59,24 @@ strong {
     font-weight: bold;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-caption, th {
+caption,
+th {
     text-align: left;
-
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
     font-size: 100%;
     margin: 0;
@@ -47,16 +84,19 @@ h1, h2, h3, h4, h5, h6 {
     color: #444;
 }
 
-q:before, q:after {
+q:before,
+q:after {
     content: '';
 }
 
-abbr, acronym {
+abbr,
+acronym {
     border: 0;
 }
 
 /* Custom CSS
  * --------------------------------------- */
+
 body {
     font-family: arial, helvetica;
     color: #333;
@@ -74,11 +114,9 @@ h1 {
     font-size: 350%;
 }
 
-
 h3 {
     font-size: 200%;
 }
-
 
 h4 {
     font-size: 150%;
@@ -124,7 +162,9 @@ p {
 }
 
 /*#menu li:hover {*/
-    /*background: rgba(255, 255, 255, 0.8);*/
+
+/*background: rgba(255, 255, 255, 0.8);*/
+
 /*}*/
 
 #menu li a,
@@ -178,7 +218,6 @@ p {
     border-color: #2f96b4 #2f96b4 #1f6377;
     border-color: rgba(0, 0, 0, .1) rgba(0, 0, 0, .1) rgba(0, 0, 0, .25);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -288,13 +327,13 @@ p {
 
 /* Demos Menu
  * --------------------------------------- */
+
 #demosMenu {
     position: fixed;
     bottom: 10px;
     right: 10px;
     z-index: 999;
 }
-
 
 /*---------------------------------*/
 
@@ -310,8 +349,8 @@ p {
     -o-text-overflow: clip;
     text-overflow: clip;
     /*background: rgba(1, 1, 2, 0.47);*/
-    -webkit-transform:    skewX(-20deg);
-    transform:    skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
 }
 
 .parallelogram > a > span {
@@ -456,11 +495,15 @@ p {
     background-size: cover;
 }
 
-.place1:hover, .place2:hover, .place3:hover, .place4:hover {
+.place1:hover,
+.place2:hover,
+.place3:hover,
+.place4:hover {
     transform: scale(1.1);
 }
 
-.about-tab1, .about-tab2 {
+.about-tab1,
+.about-tab2 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -580,11 +623,10 @@ p {
     margin: -1px;
     border: none;
     font: normal 100%/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     -o-text-overflow: clip;
     text-overflow: clip;
     background: #fff;
-
     float: right;
     font-size: 120%;
     font-weight: bold;
@@ -612,7 +654,7 @@ p {
 }
 
 .form {
-   margin: 20px 0;
+    margin: 20px 0;
 }
 
 .form-input {
