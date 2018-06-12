@@ -154,8 +154,8 @@
             paddingTop: 0,
             paddingBottom: 0,
             fixedElements: null,
-            responsive: 0, //backwards compabitility with responsiveWiddth
-            responsiveWidth: 0,
+            responsive: 1500, //backwards compabitility with responsiveWiddth
+            responsiveWidth: 1500,
             responsiveHeight: 0,
             responsiveSlides: false,
             parallax: false,
