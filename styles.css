@@ -27,6 +27,7 @@ th,
 td {
     padding: 0;
     margin: 0;
+    font-size: 14px;
 }
 
 a {
@@ -648,12 +649,12 @@ p {
 
 .maps-iframe {
     border: 5px solid #fff;
-    height: 500px;
+    height: 301px;
     width: 100%;
 }
 
 .contact-form {
-    min-height: 500px;
+    height: 570px;
     width: 100%;
     background: #fff;
     padding: 30px;
@@ -707,7 +708,6 @@ p {
 
 /* Cards */
 
-
 .card-title {
     font-size: 2em;
     color: #333333;
@@ -755,9 +755,70 @@ p {
     overflow: hidden;
 }
 
+.form > button {
+    background: #f60;
+    color: #fff;
+    border: 1px solid #f60;
+    width: 100%;
+    padding: 12px;
+}
+
+.contact-card {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+}
+
+.contact-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-card > .app-name-container {
+    display: flex;
+    line-height: 50px;
+}
+
+.contact-card .app-name {
+    font-size: 145%;
+    padding-left: 10px;
+    color: #f60;
+    margin-bottom: 15px;
+}
+
+.owner-info > div {
+    margin-top: 10px;
+}
+
+.owner-info > div > .owner-info-property {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.owner-info .fa {
+    font-size: 145%;
+}
+
+.owner-info .owner-info-value {
+    font-size: 135%;
+}
+.owner-info .owner-info-value-2 {
+    margin-left: 54px;
+    font-size: 135%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .maps-iframe {
+        height: 300px;
+    }
+}
+
 /* Specific Mobile Features */
 @media screen and (max-width: 1024px) {
-    
+
     .company-name {
         font-size: 4.5em;
     }
@@ -792,7 +853,7 @@ p {
     .package-header {
         background-color: rgba(252,108,124, 0.9);
         display: block;
-        text-transform: capitalize;   
+        text-transform: capitalize;
     }
 
     .card-title {
