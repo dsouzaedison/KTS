@@ -663,17 +663,26 @@ p {
 /* Cards */
 
 .card-title {
-    font-size: 2em;
+    font-size: 200%;
     color: #333333;
     margin: 0.5em;
 }
 
 .list-group-item {
     color: #444;
+    font-size: 122%;
 }
 
-.thumbnail:hover {
-    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+.package-card {
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 1px solid #fff;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.package-card:hover {
     transform: scale(1.05, 1.05);
 }
 
@@ -693,10 +702,6 @@ p {
 
 .text-white {
     color: #FFFFFF;
-}
-
-#mbDisplay {
-    visibility: hidden;
 }
 
 .package-header {
@@ -783,6 +788,10 @@ p {
     text-overflow: ellipsis;
 }
 
+.packages-theme-color {
+    background: #f45754;
+}
+
 @media screen and (max-width: 1200px) {
 
     .body {
@@ -793,7 +802,7 @@ p {
         height: 300px;
     }
 
-    .image-unify {
+    .image-desc-wrapper > .image-unify {
         height: 160px !important;
     }
 
@@ -817,14 +826,6 @@ p {
         transform: scale(1.9, 1.9);
     }
 
-    .list-group-item {
-        font-size: 2em;
-    }
-
-    #mbDisplay {
-        visibility: visible;
-    }
-
     .package-header {
         background-color: rgba(252,108,124, 0.9);
         display: block;
@@ -832,14 +833,13 @@ p {
     }
 
     .card-title {
-        font-size: 3em;
+        font-size: 200%;
         color: #333333;
         margin: 0.5em;
     }
 
-    #package > .image-unify {
+    .image-desc-wrapper > .image-unify {
         width: 100% !important;
-        height: auto !important;
     }
 
     .contact-form {
@@ -869,6 +869,14 @@ p {
 
     .bottom-text-container {
         width: 68%;
+    }
+
+    .last-package {
+        margin-bottom: 40px;
+    }
+
+    .about-tab2 {
+        margin-bottom: 45px;
     }
 }
 
@@ -907,7 +915,7 @@ p {
         width: 60px;
     }
 
-    .image-unify {
+    .image-desc-wrapper > .image-unify {
         height: 100px !important;
     }
 
@@ -939,10 +947,6 @@ p {
 
     .about-tab1 {
         margin-top: 15px;
-    }
-
-    .about-tab2 {
-        margin-bottom: 40px;
     }
 }
 
