@@ -745,6 +745,12 @@ p {
     margin-bottom: 15px;
 }
 
+.contact-button {
+    border: #f60 2px solid;
+    color: #f60;
+    background: transparent;
+}
+
 .owner-info > div {
     margin-top: 10px;
 }
