@@ -869,6 +869,14 @@ tbody > tr > td {
     background: #fdd835;
 }
 
+.developer {
+    color: #eee;
+}
+
+.developer:hover {
+    color: #fff;
+}
+
 /* Specific Mobile Features */
 @media screen and (max-width: 1200px) {
 
@@ -954,6 +962,10 @@ tbody > tr > td {
     .about-tab2 {
         margin-bottom: 45px;
     }
+
+    .contact-form {
+        height: 555px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -977,6 +989,19 @@ tbody > tr > td {
         height: 48px;
         width: 48px;
         line-height: 64px;
+    }
+
+    .maps-iframe {
+        margin-top: 15px;
+    }
+
+    .contact-card {
+        margin: 15px 0;
+    }
+
+    .contact-form {
+        height: auto;
+        margin-bottom: 60px;
     }
 }
 
