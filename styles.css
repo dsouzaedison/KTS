@@ -719,9 +719,9 @@ p {
 }
 
 .thumbnail:hover {
-    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(1.05, 1.05);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /*transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);*/
+    /*transform: scale(1.05, 1.05);*/
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
 }
 
 #section2 {
@@ -804,11 +804,44 @@ p {
 .owner-info .owner-info-value {
     font-size: 135%;
 }
+
 .owner-info .owner-info-value-2 {
     margin-left: 54px;
     font-size: 135%;
 }
 
+#modal-header {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 140%;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+tbody td {
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-modal {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.view-all {
+    background: #f60;
+    padding: 6px 35px;
+    color: #fff;
+}
+
+.view-all:focus {
+    outline: none;
+}
+
+
+/* Specific Mobile Features */
 @media screen and (max-width: 1200px) {
 
     .maps-iframe {
@@ -816,7 +849,6 @@ p {
     }
 }
 
-/* Specific Mobile Features */
 @media screen and (max-width: 1024px) {
 
     .company-name {
