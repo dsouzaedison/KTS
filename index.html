@@ -29,8 +29,8 @@
             var data = {
                 0: {
                     0: [
-                        'Anegudde VINAYAK temple',
-                        'Kollur MOOKAMBIKA temple',
+                        'Anegudde Vinayak temple',
+                        'Kollur Mookambika temple',
                         'Murudeshwara temple',
                         'Marvanthe beach',
                         'Perdoor Ananthapadmanabha temple',
@@ -40,9 +40,9 @@
                         'Karkala',
                         'Dharmastala Manjunath temple',
                         'Subramanya',
-                        'Mangalore sight seeing',
-                        'Udupi sight seeing',
-                        'Barkur sight seeing'
+                        'Mangalore sightseeing',
+                        'Udupi sightseeing',
+                        'Barkur sightseeing'
                     ]
                 },
                 1: {
@@ -65,15 +65,15 @@
                 },
                 2: {
                     0: [
-                        'Anegudde VINAYAK temple',
-                        'Kollur MOOKAMBIKA temple',
+                        'Anegudde Vinayak temple',
+                        'Kollur Mookambika temple',
                         'Murudeshwara temple'
                     ],
                     1: [
-                        'Coorge sight seeing'
+                        'Coorge sightseeing'
                     ],
                     2: [
-                        'Mysore sight seeing'
+                        'Mysore sightseeing'
                     ],
                     3: [
                         'Chikmagaluru and Beloor Halebeedu'
@@ -103,7 +103,7 @@
             }
 
             $('.modal-button').click(function () {
-                var id = Number($(this).attr('id'));
+                var id = Number($(this).attr('mainid'));
                 var subId = Number($(this).attr('subid'));
                 var headings = {
                     0: 'One Day Trip',
@@ -334,17 +334,16 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto text-center">
                     <div class="package-card">
-                        <img class="card-img-top image-unify" src="assets/home/crimson-sunset-at-malpe-beach-udupi.jpg"
+                        <img class="card-img-top image-unify" src="assets/murudeshwar.jpg"
                              alt="Card image cap">
                         <div class="caption">
-                            <h5 class="card-title">1 Day Trip</h5>
+                            <h5 class="card-title one">1 Day Trip</h5>
                             <ul class="list-group">
                                 <li class="list-group-item">Anegudde Vinayak Temple</li>
                                 <li class="list-group-item">Kollur Mookambika Temple</li>
                                 <li class="list-group-item">Murudeshwara Temple</li>
-                                <li class="list-group-item">Marvanthe Beach</li>
                             </ul>
-                            <button id="0" subid="0" type="button" class="btn modal-button view-all" data-toggle="modal"
+                            <button mainid="0" subid="0" type="button" class="btn modal-button view-all" data-toggle="modal"
                                     data-target="#myModal">More
                             </button>
                         </div>
@@ -352,45 +351,54 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto text-center">
                     <div class="package-card">
-                        <img class="card-img-top image-unify" src="assets/home/place1.jpg" alt="Card image cap">
+                        <img class="card-img-top image-unify" src="assets/agumbe.jpeg" alt="Card image cap">
                         <div class="caption">
-                            <h5 class="card-title">2 Days Trip</h5>
+                            <h5 class="card-title two">2 Days Trip</h5>
                             <ul class="list-group">
-                                <li class="list-group-item">Anegudde Vinayak Temple</li>
-                                <li class="list-group-item">Kollur Mookambika Temple</li>
-                                <li class="list-group-item">Murudeshwara Temple</li>
-                                <li class="list-group-item">Marvanthe Beach</li>
-                                <li class="list-group-item">Perdoor Ananthapadmanabha Temple</li>
+                                <li class="list-group-item modal-button" mainid="1" subid="0" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Murudeshwar</li>
+                                <li class="list-group-item modal-button" mainid="1" subid="1" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Agumbe</li>
+                                <li class="list-group-item modal-button" mainid="1" subid="0" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Kudhremukh</li>
+                                <li class="list-group-item modal-button" mainid="1" subid="1" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Dharmastala</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto text-center">
                     <div class="package-card">
-                        <img class="card-img-top image-unify" src="assets/home/rsz_malpe.jpg" alt="Card image cap">
+                        <img class="card-img-top image-unify" src="assets/mysore.jpg" alt="Card image cap">
                         <div class="caption">
-                            <h5 class="card-title">3 Days Trip</h5>
+                            <h5 class="card-title three">3 Days Trip</h5>
                             <ul class="list-group">
-                                <li class="list-group-item">Anegudde Vinayak Temple</li>
-                                <li class="list-group-item">Kollur Mookambika Temple</li>
-                                <li class="list-group-item">Murudeshwara Temple</li>
-                                <li class="list-group-item">Marvanthe Beach</li>
-                                <li class="list-group-item">Perdoor Ananthapadmanabha Temple</li>
+                                <li class="list-group-item modal-button" mainid="2" subid="0" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Anegudde Vinayak temple</li>
+                                <li class="list-group-item modal-button" mainid="2" subid="1" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Coorge sightseeing</li>
+                                <li class="list-group-item modal-button" mainid="2" subid="2" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Mysore sightseeing</li>
+                                <li class="list-group-item modal-button" mainid="2" subid="3" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Beloor Halebeedu</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto text-center">
                     <div class="package-card last-package">
-                        <img class="card-img-top image-unify" src="assets/home/place3.jpg" alt="Card image cap">
+                        <img class="card-img-top image-unify" src="assets/coorg.jpg" alt="Card image cap">
                         <div class="caption">
-                            <h5 class="card-title">4 Days Trip</h5>
+                            <h5 class="card-title four">4 Days Trip</h5>
                             <ul class="list-group">
-                                <li class="list-group-item">Anegudde Vinayak Temple</li>
-                                <li class="list-group-item">Kollur Mookambika Temple</li>
-                                <li class="list-group-item">Murudeshwara Temple</li>
-                                <li class="list-group-item">Marvanthe Beach</li>
-                                <li class="list-group-item">Perdoor Ananthapadmanabha Temple</li>
+                                <li class="list-group-item modal-button" mainid="3" subid="0" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Coorge</li>
+                                <li class="list-group-item modal-button" mainid="3" subid="1" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Ooty</li>
+                                <li class="list-group-item modal-button" mainid="3" subid="2" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Chikmagalur</li>
+                                <li class="list-group-item modal-button" mainid="3" subid="3" data-toggle="modal"
+                                    data-target="#myModal"><i class="fa fa-plus-circle"></i> Kerala</li>
                             </ul>
                         </div>
                     </div>
