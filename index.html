@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123043941-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123043941-1');
+    </script>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Karnataka Tours &amp; Services</title>
@@ -439,7 +448,7 @@
                                         <span class="owner-info-property">
                                             <i class="fa fa-phone"></i>
                                         </span>
-                                    <span class="owner-info-value">9876543210</span>
+                                    <a href="tel:9945395596" class="owner-info-value">+91 994-539-5596</a>
                                 </div>
                                 <div>
                                         <span class="owner-info-property">
@@ -463,11 +472,13 @@
                         <div class="contact-heading">CONTACT</div>
                         <div class="contact-underline"></div>
                         <div class="form">
-                            <input type="text" class="form-input" placeholder="Name">
-                            <input type="text" class="form-input" placeholder="Email">
-                            <input type="text" class="form-input" placeholder="Phone">
-                            <textarea name="" id="" rows="5" class="form-input" placeholder="Your Message"></textarea>
-                            <button><i class="fa fa-paper-plane"></i> SUBMIT</button>
+                            <form action="http://conceptevt.com/kts/submit.php" method="post">
+                                <input name="name" type="text" class="form-input" placeholder="Name">
+                                <input name="email" type="text" class="form-input" placeholder="Email">
+                                <input name="phone" type="text" class="form-input" placeholder="Phone">
+                                <textarea name="message" id="" rows="5" class="form-input" placeholder="Your Message"></textarea>
+                                <button class="submit-button"><i class="fa fa-paper-plane"></i> SUBMIT</button>
+                            </form>
                         </div>
                     </div>
                 </div>

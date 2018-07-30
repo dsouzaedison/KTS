@@ -877,6 +877,15 @@ tbody > tr > td {
     color: #fff;
 }
 
+.submit-button {
+    width: 100%;
+    background: #f90;
+    padding: 6px;
+    color: #fff;
+    border: 1px solid #eee;
+    outline: none;
+}
+
 /* Specific Mobile Features */
 @media screen and (max-width: 1200px) {
 
